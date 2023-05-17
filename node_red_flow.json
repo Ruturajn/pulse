@@ -1,0 +1,1266 @@
+[
+    {
+        "id": "161bbea8294d7ce2",
+        "type": "tab",
+        "label": "FUSIOT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c429762d59516844",
+        "type": "group",
+        "z": "161bbea8294d7ce2",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "766ac21200c8c5b2"
+        ],
+        "x": 1694,
+        "y": 719,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "b015dca1fcb66b6f",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "CURR_SENS1_VAL_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1070,
+        "y": 760,
+        "wires": [
+            [
+                "2421f1d8b99d2197",
+                "1ba88d6978bc196a"
+            ]
+        ]
+    },
+    {
+        "id": "e557187adb0535fe",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "CURR_SENS2_VAL_T7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            [
+                "ddd75769b829b46d",
+                "043ab4f3c258278c"
+            ]
+        ]
+    },
+    {
+        "id": "f29e27d884c6445b",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "VOLT_SENS1_VAL_T7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1180,
+        "y": 960,
+        "wires": [
+            [
+                "686412aba2b8adec",
+                "b14ad8d2f5ac0671"
+            ]
+        ]
+    },
+    {
+        "id": "a2068c370d0ecbaf",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "VOLT_SENS2_VAL_T7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1180,
+        "y": 1080,
+        "wires": [
+            [
+                "01b7fca4335b5d56",
+                "cd72c5e57a90517c"
+            ]
+        ]
+    },
+    {
+        "id": "2a63815ad62be74e",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "SMOKE_SENS_VAL_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            [
+                "5e2ac25c5e9f4732",
+                "13cf79f5b3f0caed"
+            ]
+        ]
+    },
+    {
+        "id": "0fa97f0ba2ac903c",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "SENS1_COMM_T7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            [
+                "1bf50297cd8a0324",
+                "7f08b08174f42f1b"
+            ]
+        ]
+    },
+    {
+        "id": "9db0ac9f42255360",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "SENS2_COMM_T7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1210,
+        "y": 280,
+        "wires": [
+            [
+                "9b9aec53f5d63afe",
+                "5a637769d586bec1"
+            ]
+        ]
+    },
+    {
+        "id": "4f04854c3641babd",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "EFUSE1_STAT_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 440,
+        "wires": [
+            [
+                "0dba64dad34b88e7",
+                "6d0e3343e0bee96a"
+            ]
+        ]
+    },
+    {
+        "id": "43776b85dd522417",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "EFUSE2_STAT_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 520,
+        "wires": [
+            [
+                "7a76806c3ed78629",
+                "b454e41a3212e179"
+            ]
+        ]
+    },
+    {
+        "id": "ddd75769b829b46d",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "686412aba2b8adec",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2421f1d8b99d2197",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "ac915dbf034a88a2",
+        "type": "ui_led",
+        "z": "161bbea8294d7ce2",
+        "order": 1,
+        "group": "8712c29ee01bdb9d",
+        "width": 0,
+        "height": 0,
+        "label": "EFuse 1 - Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#00ff00",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1790,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e3c6b17201ad9476",
+        "type": "ui_led",
+        "z": "161bbea8294d7ce2",
+        "order": 2,
+        "group": "8712c29ee01bdb9d",
+        "width": 0,
+        "height": 0,
+        "label": "EFuse 2 - Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#00ff00",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "0dba64dad34b88e7",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 1",
+        "func": "var on = \n{\n    payload: true\n}\n\nvar off = \n{\n    payload: false\n}\n\nif (msg.payload == 1)\n    return on;\nelse\n    return off;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 420,
+        "wires": [
+            [
+                "ac915dbf034a88a2"
+            ]
+        ]
+    },
+    {
+        "id": "7a76806c3ed78629",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 2",
+        "func": "var on =\n{\n    payload: true\n}\n\nvar off =\n{\n    payload: false\n}\n\n\nif (msg.payload == true)\n    return on;\nelse\n    return off;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 500,
+        "wires": [
+            [
+                "e3c6b17201ad9476"
+            ]
+        ]
+    },
+    {
+        "id": "cd72c5e57a90517c",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 3",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1080,
+        "wires": [
+            [
+                "f10d1de503c00191"
+            ]
+        ]
+    },
+    {
+        "id": "1bf50297cd8a0324",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 4",
+        "func": "var on = { payload: true };\nvar off = { payload: false };\n\nif (msg.payload == true)\n    return on;\nelse\n    return off;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 200,
+        "wires": [
+            [
+                "b52c3a8b5f13babf"
+            ]
+        ]
+    },
+    {
+        "id": "9b9aec53f5d63afe",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 5",
+        "func": "var on = { payload: true };\nvar off = { payload: false };\n\nif (msg.payload == true)\n    return on;\nelse\n    return off;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 280,
+        "wires": [
+            [
+                "c6a1bd0ce776fa19"
+            ]
+        ]
+    },
+    {
+        "id": "13cf79f5b3f0caed",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 6",
+        "func": "var on = { payload: true };\nvar off = { payload: false };\n\nif (msg.payload == true)\n    return on;\nelse\n    return off;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 120,
+        "wires": [
+            [
+                "adb29d80a838efc2"
+            ]
+        ]
+    },
+    {
+        "id": "b52c3a8b5f13babf",
+        "type": "ui_led",
+        "z": "161bbea8294d7ce2",
+        "order": 4,
+        "group": "8712c29ee01bdb9d",
+        "width": 0,
+        "height": 0,
+        "label": "Sensor 1 COMM Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#00ff00",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ffffff",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1830,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c6a1bd0ce776fa19",
+        "type": "ui_led",
+        "z": "161bbea8294d7ce2",
+        "order": 3,
+        "group": "8712c29ee01bdb9d",
+        "width": 0,
+        "height": 0,
+        "label": "Sensor 2 COMM Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#00ff00",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ffffff",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1830,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "adb29d80a838efc2",
+        "type": "ui_led",
+        "z": "161bbea8294d7ce2",
+        "order": 5,
+        "group": "8712c29ee01bdb9d",
+        "width": 0,
+        "height": 0,
+        "label": "Fire Alarm",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ffffff",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1830,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5e2ac25c5e9f4732",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "01b7fca4335b5d56",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "1ba88d6978bc196a",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 7",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 760,
+        "wires": [
+            [
+                "766ac21200c8c5b2"
+            ]
+        ]
+    },
+    {
+        "id": "766ac21200c8c5b2",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "g": "c429762d59516844",
+        "name": "",
+        "group": "7439f979.e3ee18",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current-Supply Line 1",
+        "label": "mA",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 1820,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "043ab4f3c258278c",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 8",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 840,
+        "wires": [
+            [
+                "c3af69f25240e5d9"
+            ]
+        ]
+    },
+    {
+        "id": "c3af69f25240e5d9",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "7439f979.e3ee18",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current-Supply Line 2",
+        "label": "mA",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 1820,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "b14ad8d2f5ac0671",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 9",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 960,
+        "wires": [
+            [
+                "a551d806f17b968f"
+            ]
+        ]
+    },
+    {
+        "id": "a551d806f17b968f",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "51d73d53f4c6083b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Volts-Supply Line 1",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#7e9fe2",
+            "#002ee6",
+            "#ba27ce"
+        ],
+        "seg1": "10",
+        "seg2": "20",
+        "diff": false,
+        "className": "",
+        "x": 1830,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "f10d1de503c00191",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "51d73d53f4c6083b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Volts-Supply Line 2",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#7e9fe2",
+            "#002ee6",
+            "#ba27ce"
+        ],
+        "seg1": "10",
+        "seg2": "20",
+        "diff": false,
+        "className": "",
+        "x": 1830,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "7f08b08174f42f1b",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5a637769d586bec1",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6d0e3343e0bee96a",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b454e41a3212e179",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0392e96c22ccebd0",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "POW_SENS1_VAL_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1200,
+        "y": 1220,
+        "wires": [
+            [
+                "ba6422a19ece23db",
+                "55a25b312a013fbf"
+            ]
+        ]
+    },
+    {
+        "id": "55a25b312a013fbf",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 10",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 1220,
+        "wires": [
+            [
+                "64a5a162a346fcf3"
+            ]
+        ]
+    },
+    {
+        "id": "ba6422a19ece23db",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "64a5a162a346fcf3",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "d383bcdbe21c22ba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pow-Supply Line 1",
+        "label": "mW",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "700",
+        "colors": [
+            "#60f056",
+            "#2fbc46",
+            "#117429"
+        ],
+        "seg1": "200",
+        "seg2": "500",
+        "diff": false,
+        "className": "",
+        "x": 1850,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "d77dadfc41eebe22",
+        "type": "mqtt in",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "POW_SENS2_VAL_T7",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "8fde701c.6c6c3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1200,
+        "y": 1360,
+        "wires": [
+            [
+                "cb3ba19c2a96db1f",
+                "03a7dbfdd896cbac"
+            ]
+        ]
+    },
+    {
+        "id": "03a7dbfdd896cbac",
+        "type": "function",
+        "z": "161bbea8294d7ce2",
+        "name": "function 11",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 1360,
+        "wires": [
+            [
+                "fade5e4651b1498a"
+            ]
+        ]
+    },
+    {
+        "id": "cb3ba19c2a96db1f",
+        "type": "debug",
+        "z": "161bbea8294d7ce2",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "fade5e4651b1498a",
+        "type": "ui_gauge",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "d383bcdbe21c22ba",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pow-Supply Line 2",
+        "label": "mW",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "700",
+        "colors": [
+            "#60f956",
+            "#2fbc46",
+            "#117429"
+        ],
+        "seg1": "200",
+        "seg2": "500",
+        "diff": false,
+        "className": "",
+        "x": 1850,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "dece6e4e2f74ea86",
+        "type": "ui_media",
+        "z": "161bbea8294d7ce2",
+        "group": "8712c29ee01bdb9d",
+        "name": "LOGO",
+        "width": 7,
+        "height": 3,
+        "order": 9,
+        "category": "logo",
+        "file": "IoT_Logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1590,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75258870320c197a",
+        "type": "mqtt out",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "EFUSE1_CONTROL_T7",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fde701c.6c6c3",
+        "x": 1530,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "f33b2b7707bb163f",
+        "type": "mqtt out",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "EFUSE2_CONTROL_T7",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fde701c.6c6c3",
+        "x": 1530,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "3a77ceafc8da3b7d",
+        "type": "ui_switch",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "label": "EFUSE 1 CONTROL",
+        "tooltip": "",
+        "group": "8712c29ee01bdb9d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1200,
+        "y": 1660,
+        "wires": [
+            [
+                "75258870320c197a"
+            ]
+        ]
+    },
+    {
+        "id": "961c289c27284d11",
+        "type": "ui_switch",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "label": "EFUSE 2 CONTROL",
+        "tooltip": "",
+        "group": "8712c29ee01bdb9d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1200,
+        "y": 1740,
+        "wires": [
+            [
+                "f33b2b7707bb163f"
+            ]
+        ]
+    },
+    {
+        "id": "c15ad8fa29a82a53",
+        "type": "mqtt out",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "topic": "OTAFU_T7",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fde701c.6c6c3",
+        "x": 1550,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "556af672c2c2bc25",
+        "type": "ui_button",
+        "z": "161bbea8294d7ce2",
+        "name": "",
+        "group": "8712c29ee01bdb9d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Firmware Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1230,
+        "y": 1860,
+        "wires": [
+            [
+                "c15ad8fa29a82a53"
+            ]
+        ]
+    },
+    {
+        "id": "688b19b64b51a77d",
+        "type": "ui_spacer",
+        "z": "161bbea8294d7ce2",
+        "name": "spacer",
+        "group": "7439f979.e3ee18",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "b53590b0ee40d3dd",
+        "type": "ui_spacer",
+        "z": "161bbea8294d7ce2",
+        "name": "spacer",
+        "group": "51d73d53f4c6083b",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "43a1da636225c49c",
+        "type": "ui_spacer",
+        "z": "161bbea8294d7ce2",
+        "name": "spacer",
+        "group": "d383bcdbe21c22ba",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "8fde701c.6c6c3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8712c29ee01bdb9d",
+        "type": "ui_group",
+        "name": "Indicator LEDs",
+        "tab": "c19ddfcf.06e82",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7439f979.e3ee18",
+        "type": "ui_group",
+        "name": "CURRENT",
+        "tab": "c19ddfcf.06e82",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "51d73d53f4c6083b",
+        "type": "ui_group",
+        "name": "VOLTAGE",
+        "tab": "c19ddfcf.06e82",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d383bcdbe21c22ba",
+        "type": "ui_group",
+        "name": "POWER",
+        "tab": "c19ddfcf.06e82",
+        "order": 3,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c19ddfcf.06e82",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
