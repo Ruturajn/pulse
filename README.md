@@ -2,11 +2,11 @@
 
 <div align="center">
   
-![PXL_20230509_175805257](https://github.com/ese5160/a13-final-submission-group-fusiot/assets/56625259/b04ee717-9a95-4d35-8446-766dccda74ae)
+![PXL_20230509_175805257](/assets/setup.jpg)
 
   <br>
   
-![Block_Diagram_Final](https://github.com/ese5160/a13-final-submission-group-fusiot/assets/56625259/6969762b-044e-4646-a3dd-3ae0d2546e8f)
+![Block_Diagram_Final](/assets/block_diagram.png)
 
 </div>
 
